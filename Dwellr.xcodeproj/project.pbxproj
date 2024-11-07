@@ -1,0 +1,763 @@
+// !$*UTF8*$!
+{
+	archiveVersion = 1;
+	classes = {
+	};
+	objectVersion = 56;
+	objects = {
+
+/* Begin PBXBuildFile section */
+		146C958985D723F33C6DD949 /* awsconfiguration.json in Resources */ = {isa = PBXBuildFile; fileRef = C6090C9B5C57218AB9A60C3E /* awsconfiguration.json */; };
+		759282145607054DC519E3DA /* amplifyconfiguration.json in Resources */ = {isa = PBXBuildFile; fileRef = 37ADF6E8C8D8EF254E802D76 /* amplifyconfiguration.json */; };
+		9A0E5977BFE21E121C6EC5F5 /* Pods_Dwellr.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 863107A83CB4D0F3F6103BF7 /* Pods_Dwellr.framework */; };
+		E20676AA2A63D9D6005613BB /* DwellrApp.swift in Sources */ = {isa = PBXBuildFile; fileRef = E20676A92A63D9D6005613BB /* DwellrApp.swift */; };
+		E20676AC2A63D9D6005613BB /* ContentView.swift in Sources */ = {isa = PBXBuildFile; fileRef = E20676AB2A63D9D6005613BB /* ContentView.swift */; };
+		E20676AE2A63D9D7005613BB /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = E20676AD2A63D9D7005613BB /* Assets.xcassets */; };
+		E20676B12A63D9D7005613BB /* Preview Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = E20676B02A63D9D7005613BB /* Preview Assets.xcassets */; };
+		E20676B82A63DBCF005613BB /* CameraView.swift in Sources */ = {isa = PBXBuildFile; fileRef = E20676B72A63DBCF005613BB /* CameraView.swift */; };
+		E20AFEBD2AD1039100CFD675 /* FeedView.swift in Sources */ = {isa = PBXBuildFile; fileRef = E20AFEBC2AD1039100CFD675 /* FeedView.swift */; };
+		E211EEEC2A7A1A4D00CF9473 /* AWSAPIPlugin in Frameworks */ = {isa = PBXBuildFile; productRef = E211EEEB2A7A1A4D00CF9473 /* AWSAPIPlugin */; };
+		E211EEEE2A7A1A4D00CF9473 /* AWSCloudWatchLoggingPlugin in Frameworks */ = {isa = PBXBuildFile; productRef = E211EEED2A7A1A4D00CF9473 /* AWSCloudWatchLoggingPlugin */; };
+		E211EEF02A7A1A4D00CF9473 /* AWSCognitoAuthPlugin in Frameworks */ = {isa = PBXBuildFile; productRef = E211EEEF2A7A1A4D00CF9473 /* AWSCognitoAuthPlugin */; };
+		E211EEF22A7A1A4D00CF9473 /* AWSDataStorePlugin in Frameworks */ = {isa = PBXBuildFile; productRef = E211EEF12A7A1A4D00CF9473 /* AWSDataStorePlugin */; };
+		E211EEF42A7A1A4D00CF9473 /* AWSLocationGeoPlugin in Frameworks */ = {isa = PBXBuildFile; productRef = E211EEF32A7A1A4D00CF9473 /* AWSLocationGeoPlugin */; };
+		E211EEF62A7A1A4D00CF9473 /* AWSPinpointAnalyticsPlugin in Frameworks */ = {isa = PBXBuildFile; productRef = E211EEF52A7A1A4D00CF9473 /* AWSPinpointAnalyticsPlugin */; };
+		E211EEF82A7A1A4D00CF9473 /* AWSPinpointPushNotificationsPlugin in Frameworks */ = {isa = PBXBuildFile; productRef = E211EEF72A7A1A4D00CF9473 /* AWSPinpointPushNotificationsPlugin */; };
+		E211EEFA2A7A1A4D00CF9473 /* AWSPluginsCore in Frameworks */ = {isa = PBXBuildFile; productRef = E211EEF92A7A1A4D00CF9473 /* AWSPluginsCore */; };
+		E211EEFC2A7A1A4D00CF9473 /* AWSPredictionsPlugin in Frameworks */ = {isa = PBXBuildFile; productRef = E211EEFB2A7A1A4D00CF9473 /* AWSPredictionsPlugin */; };
+		E211EEFE2A7A1A4D00CF9473 /* AWSS3StoragePlugin in Frameworks */ = {isa = PBXBuildFile; productRef = E211EEFD2A7A1A4D00CF9473 /* AWSS3StoragePlugin */; };
+		E211EF002A7A1A4D00CF9473 /* Amplify in Frameworks */ = {isa = PBXBuildFile; productRef = E211EEFF2A7A1A4D00CF9473 /* Amplify */; };
+		E211EF022A7A1A4D00CF9473 /* CoreMLPredictionsPlugin in Frameworks */ = {isa = PBXBuildFile; productRef = E211EF012A7A1A4D00CF9473 /* CoreMLPredictionsPlugin */; };
+		E211EF052A7A1AD100CF9473 /* Authenticator in Frameworks */ = {isa = PBXBuildFile; productRef = E211EF042A7A1AD100CF9473 /* Authenticator */; };
+		E21308F32AD3BB2300B2A20C /* Posts.swift in Sources */ = {isa = PBXBuildFile; fileRef = E21308F22AD3BB2300B2A20C /* Posts.swift */; };
+		E21AF6782A85D79F00482AEE /* ProfileView.swift in Sources */ = {isa = PBXBuildFile; fileRef = E21AF6772A85D79F00482AEE /* ProfileView.swift */; };
+		E21AF67C2A85D97300482AEE /* ReviewPostView.swift in Sources */ = {isa = PBXBuildFile; fileRef = E21AF67B2A85D97300482AEE /* ReviewPostView.swift */; };
+		E21AF67E2A88AC1E00482AEE /* SettingsView.swift in Sources */ = {isa = PBXBuildFile; fileRef = E21AF67D2A88AC1E00482AEE /* SettingsView.swift */; };
+		E21AF6802A88B08300482AEE /* CreatePostOnboardingView.swift in Sources */ = {isa = PBXBuildFile; fileRef = E21AF67F2A88B08300482AEE /* CreatePostOnboardingView.swift */; };
+		E25841012B814C1800C7149A /* GoogleService-Info.plist in Resources */ = {isa = PBXBuildFile; fileRef = E25841002B814C1800C7149A /* GoogleService-Info.plist */; };
+		E25841042B814C9100C7149A /* FirebaseAnalytics in Frameworks */ = {isa = PBXBuildFile; productRef = E25841032B814C9100C7149A /* FirebaseAnalytics */; };
+		E25841062B814C9100C7149A /* FirebaseAnalyticsOnDeviceConversion in Frameworks */ = {isa = PBXBuildFile; productRef = E25841052B814C9100C7149A /* FirebaseAnalyticsOnDeviceConversion */; };
+		E25841082B814C9100C7149A /* FirebaseAnalyticsSwift in Frameworks */ = {isa = PBXBuildFile; productRef = E25841072B814C9100C7149A /* FirebaseAnalyticsSwift */; };
+		E258410A2B814C9100C7149A /* FirebaseAnalyticsWithoutAdIdSupport in Frameworks */ = {isa = PBXBuildFile; productRef = E25841092B814C9100C7149A /* FirebaseAnalyticsWithoutAdIdSupport */; };
+		E258410C2B814C9100C7149A /* FirebaseAppCheck in Frameworks */ = {isa = PBXBuildFile; productRef = E258410B2B814C9100C7149A /* FirebaseAppCheck */; };
+		E27128B92A662EE3004B7CBD /* CameraViewModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = E27128B82A662EE3004B7CBD /* CameraViewModel.swift */; };
+		E27128BB2A662F4A004B7CBD /* CameraPreview.swift in Sources */ = {isa = PBXBuildFile; fileRef = E27128BA2A662F4A004B7CBD /* CameraPreview.swift */; };
+		E27128BD2A67835C004B7CBD /* SpeechViewModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = E27128BC2A67835C004B7CBD /* SpeechViewModel.swift */; };
+		E27128C32A68D984004B7CBD /* ReviewRecordingView.swift in Sources */ = {isa = PBXBuildFile; fileRef = E27128C22A68D984004B7CBD /* ReviewRecordingView.swift */; };
+		E27C73012A8996BA0066CD32 /* VideoUtils.swift in Sources */ = {isa = PBXBuildFile; fileRef = E27C73002A8996BA0066CD32 /* VideoUtils.swift */; };
+		E27C73032A901C970066CD32 /* CaptureData.swift in Sources */ = {isa = PBXBuildFile; fileRef = E27C73022A901C970066CD32 /* CaptureData.swift */; };
+		E27C73072A967CA60066CD32 /* DescriptionData.swift in Sources */ = {isa = PBXBuildFile; fileRef = E27C73062A967CA60066CD32 /* DescriptionData.swift */; };
+		E288F9892B66FCF6004737E0 /* PostOverlay.swift in Sources */ = {isa = PBXBuildFile; fileRef = E288F9882B66FCF6004737E0 /* PostOverlay.swift */; };
+		E28F094C2AD4BB0700921614 /* FeedViewModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = E28F094B2AD4BB0700921614 /* FeedViewModel.swift */; };
+		E2957EEF2B6F0D46007FAD64 /* ExpandingTextView.swift in Sources */ = {isa = PBXBuildFile; fileRef = E2957EEE2B6F0D46007FAD64 /* ExpandingTextView.swift */; };
+		E2D0B9AF2AD106BC00E0F64F /* FetchService.swift in Sources */ = {isa = PBXBuildFile; fileRef = E2D0B9AE2AD106BC00E0F64F /* FetchService.swift */; };
+		E2E8F4C32A7F148B0002EB0C /* amplifyconfiguration.json in Resources */ = {isa = PBXBuildFile; fileRef = E2E8F4C12A7F148B0002EB0C /* amplifyconfiguration.json */; };
+		E2E8F4C42A7F148B0002EB0C /* awsconfiguration.json in Resources */ = {isa = PBXBuildFile; fileRef = E2E8F4C22A7F148B0002EB0C /* awsconfiguration.json */; };
+		E2E8F4C62A7F25280002EB0C /* awsconfiguration.json in Resources */ = {isa = PBXBuildFile; fileRef = E2E8F4C52A7F25280002EB0C /* awsconfiguration.json */; };
+		E2E8F4C92A7F29C50002EB0C /* amplifyconfiguration.json in Resources */ = {isa = PBXBuildFile; fileRef = E2E8F4C72A7F29C50002EB0C /* amplifyconfiguration.json */; };
+		E2E8F4CA2A7F29C50002EB0C /* awsconfiguration.json in Resources */ = {isa = PBXBuildFile; fileRef = E2E8F4C82A7F29C50002EB0C /* awsconfiguration.json */; };
+/* End PBXBuildFile section */
+
+/* Begin PBXFileReference section */
+		01F65790450BA70B8F788C46 /* Pods-Dwellr.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-Dwellr.release.xcconfig"; path = "Target Support Files/Pods-Dwellr/Pods-Dwellr.release.xcconfig"; sourceTree = "<group>"; };
+		37ADF6E8C8D8EF254E802D76 /* amplifyconfiguration.json */ = {isa = PBXFileReference; explicitFileType = text.json; path = amplifyconfiguration.json; sourceTree = "<group>"; };
+		5DB2278F43ABFCA2CF5D5A2E /* Pods-Dwellr.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-Dwellr.debug.xcconfig"; path = "Target Support Files/Pods-Dwellr/Pods-Dwellr.debug.xcconfig"; sourceTree = "<group>"; };
+		863107A83CB4D0F3F6103BF7 /* Pods_Dwellr.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_Dwellr.framework; sourceTree = BUILT_PRODUCTS_DIR; };
+		C6090C9B5C57218AB9A60C3E /* awsconfiguration.json */ = {isa = PBXFileReference; explicitFileType = text.json; path = awsconfiguration.json; sourceTree = "<group>"; };
+		E20676A62A63D9D6005613BB /* Dwellr.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = Dwellr.app; sourceTree = BUILT_PRODUCTS_DIR; };
+		E20676A92A63D9D6005613BB /* DwellrApp.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = DwellrApp.swift; sourceTree = "<group>"; };
+		E20676AB2A63D9D6005613BB /* ContentView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ContentView.swift; sourceTree = "<group>"; };
+		E20676AD2A63D9D7005613BB /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
+		E20676B02A63D9D7005613BB /* Preview Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = "Preview Assets.xcassets"; sourceTree = "<group>"; };
+		E20676B72A63DBCF005613BB /* CameraView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CameraView.swift; sourceTree = "<group>"; };
+		E20676B92A63DE2D005613BB /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist; path = Info.plist; sourceTree = "<group>"; };
+		E20AFEBC2AD1039100CFD675 /* FeedView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; name = FeedView.swift; path = Dwellr/view/feed/FeedView.swift; sourceTree = SOURCE_ROOT; };
+		E211EEE92A774F4400CF9473 /* Dwellr.entitlements */ = {isa = PBXFileReference; lastKnownFileType = text.plist.entitlements; name = Dwellr.entitlements; path = Dwellr/Dwellr.entitlements; sourceTree = "<group>"; };
+		E21308F22AD3BB2300B2A20C /* Posts.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; name = Posts.swift; path = Dwellr/model/Posts.swift; sourceTree = SOURCE_ROOT; };
+		E21AF6772A85D79F00482AEE /* ProfileView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; name = ProfileView.swift; path = Dwellr/view/ProfileView.swift; sourceTree = SOURCE_ROOT; };
+		E21AF67B2A85D97300482AEE /* ReviewPostView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; name = ReviewPostView.swift; path = Dwellr/view/posts/ReviewPostView.swift; sourceTree = SOURCE_ROOT; };
+		E21AF67D2A88AC1E00482AEE /* SettingsView.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; name = SettingsView.swift; path = Dwellr/view/SettingsView.swift; sourceTree = SOURCE_ROOT; };
+		E21AF67F2A88B08300482AEE /* CreatePostOnboardingView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; name = CreatePostOnboardingView.swift; path = Dwellr/view/posts/CreatePostOnboardingView.swift; sourceTree = SOURCE_ROOT; };
+		E25841002B814C1800C7149A /* GoogleService-Info.plist */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.plist.xml; name = "GoogleService-Info.plist"; path = "../../../../Downloads/GoogleService-Info.plist"; sourceTree = "<group>"; };
+		E27128B82A662EE3004B7CBD /* CameraViewModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CameraViewModel.swift; sourceTree = "<group>"; };
+		E27128BA2A662F4A004B7CBD /* CameraPreview.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CameraPreview.swift; sourceTree = "<group>"; };
+		E27128BC2A67835C004B7CBD /* SpeechViewModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SpeechViewModel.swift; sourceTree = "<group>"; };
+		E27128C22A68D984004B7CBD /* ReviewRecordingView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ReviewRecordingView.swift; sourceTree = "<group>"; };
+		E27C73002A8996BA0066CD32 /* VideoUtils.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; name = VideoUtils.swift; path = Dwellr/util/VideoUtils.swift; sourceTree = SOURCE_ROOT; };
+		E27C73022A901C970066CD32 /* CaptureData.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; name = CaptureData.swift; path = Dwellr/model/CaptureData.swift; sourceTree = SOURCE_ROOT; };
+		E27C73062A967CA60066CD32 /* DescriptionData.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; name = DescriptionData.swift; path = Dwellr/model/DescriptionData.swift; sourceTree = SOURCE_ROOT; };
+		E288F9882B66FCF6004737E0 /* PostOverlay.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; name = PostOverlay.swift; path = Dwellr/view/feed/PostOverlay.swift; sourceTree = SOURCE_ROOT; };
+		E28F094B2AD4BB0700921614 /* FeedViewModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; name = FeedViewModel.swift; path = ../../Dwellr/viewmodel/FeedViewModel.swift; sourceTree = "<group>"; };
+		E2957EEE2B6F0D46007FAD64 /* ExpandingTextView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; name = ExpandingTextView.swift; path = Dwellr/view/feed/ExpandingTextView.swift; sourceTree = SOURCE_ROOT; };
+		E2D0B9AE2AD106BC00E0F64F /* FetchService.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; name = FetchService.swift; path = Dwellr/viewmodel/FetchService.swift; sourceTree = SOURCE_ROOT; };
+		E2E8F4C12A7F148B0002EB0C /* amplifyconfiguration.json */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.json; path = amplifyconfiguration.json; sourceTree = SOURCE_ROOT; };
+		E2E8F4C22A7F148B0002EB0C /* awsconfiguration.json */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.json; path = awsconfiguration.json; sourceTree = SOURCE_ROOT; };
+		E2E8F4C52A7F25280002EB0C /* awsconfiguration.json */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.json; path = awsconfiguration.json; sourceTree = SOURCE_ROOT; };
+		E2E8F4C72A7F29C50002EB0C /* amplifyconfiguration.json */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.json; path = amplifyconfiguration.json; sourceTree = SOURCE_ROOT; };
+		E2E8F4C82A7F29C50002EB0C /* awsconfiguration.json */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.json; path = awsconfiguration.json; sourceTree = SOURCE_ROOT; };
+/* End PBXFileReference section */
+
+/* Begin PBXFrameworksBuildPhase section */
+		E20676A32A63D9D6005613BB /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				E258410C2B814C9100C7149A /* FirebaseAppCheck in Frameworks */,
+				E211EEFC2A7A1A4D00CF9473 /* AWSPredictionsPlugin in Frameworks */,
+				E211EEF42A7A1A4D00CF9473 /* AWSLocationGeoPlugin in Frameworks */,
+				E211EEEC2A7A1A4D00CF9473 /* AWSAPIPlugin in Frameworks */,
+				E25841082B814C9100C7149A /* FirebaseAnalyticsSwift in Frameworks */,
+				E211EEFA2A7A1A4D00CF9473 /* AWSPluginsCore in Frameworks */,
+				E211EF022A7A1A4D00CF9473 /* CoreMLPredictionsPlugin in Frameworks */,
+				9A0E5977BFE21E121C6EC5F5 /* Pods_Dwellr.framework in Frameworks */,
+				E258410A2B814C9100C7149A /* FirebaseAnalyticsWithoutAdIdSupport in Frameworks */,
+				E211EF052A7A1AD100CF9473 /* Authenticator in Frameworks */,
+				E25841062B814C9100C7149A /* FirebaseAnalyticsOnDeviceConversion in Frameworks */,
+				E211EEF82A7A1A4D00CF9473 /* AWSPinpointPushNotificationsPlugin in Frameworks */,
+				E25841042B814C9100C7149A /* FirebaseAnalytics in Frameworks */,
+				E211EEFE2A7A1A4D00CF9473 /* AWSS3StoragePlugin in Frameworks */,
+				E211EEEE2A7A1A4D00CF9473 /* AWSCloudWatchLoggingPlugin in Frameworks */,
+				E211EEF22A7A1A4D00CF9473 /* AWSDataStorePlugin in Frameworks */,
+				E211EF002A7A1A4D00CF9473 /* Amplify in Frameworks */,
+				E211EEF02A7A1A4D00CF9473 /* AWSCognitoAuthPlugin in Frameworks */,
+				E211EEF62A7A1A4D00CF9473 /* AWSPinpointAnalyticsPlugin in Frameworks */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXFrameworksBuildPhase section */
+
+/* Begin PBXGroup section */
+		29E0D1E113174E8210BE496E /* Pods */ = {
+			isa = PBXGroup;
+			children = (
+				5DB2278F43ABFCA2CF5D5A2E /* Pods-Dwellr.debug.xcconfig */,
+				01F65790450BA70B8F788C46 /* Pods-Dwellr.release.xcconfig */,
+			);
+			path = Pods;
+			sourceTree = "<group>";
+		};
+		2CDC9F0D566358A038308475 /* AmplifyConfig */ = {
+			isa = PBXGroup;
+			children = (
+				C6090C9B5C57218AB9A60C3E /* awsconfiguration.json */,
+				37ADF6E8C8D8EF254E802D76 /* amplifyconfiguration.json */,
+				E2E8F4C22A7F148B0002EB0C /* awsconfiguration.json */,
+				E2E8F4C52A7F25280002EB0C /* awsconfiguration.json */,
+				E2E8F4C12A7F148B0002EB0C /* amplifyconfiguration.json */,
+				E2E8F4C72A7F29C50002EB0C /* amplifyconfiguration.json */,
+				E2E8F4C82A7F29C50002EB0C /* awsconfiguration.json */,
+			);
+			name = AmplifyConfig;
+			sourceTree = "<group>";
+		};
+		5542AECBE5307CA79B9FBAB7 /* Frameworks */ = {
+			isa = PBXGroup;
+			children = (
+				863107A83CB4D0F3F6103BF7 /* Pods_Dwellr.framework */,
+			);
+			name = Frameworks;
+			sourceTree = "<group>";
+		};
+		E206769D2A63D9D6005613BB = {
+			isa = PBXGroup;
+			children = (
+				E211EEE92A774F4400CF9473 /* Dwellr.entitlements */,
+				E20676A82A63D9D6005613BB /* dwellr */,
+				E20676A72A63D9D6005613BB /* Products */,
+				29E0D1E113174E8210BE496E /* Pods */,
+				5542AECBE5307CA79B9FBAB7 /* Frameworks */,
+				2CDC9F0D566358A038308475 /* AmplifyConfig */,
+			);
+			sourceTree = "<group>";
+		};
+		E20676A72A63D9D6005613BB /* Products */ = {
+			isa = PBXGroup;
+			children = (
+				E20676A62A63D9D6005613BB /* Dwellr.app */,
+			);
+			name = Products;
+			sourceTree = "<group>";
+		};
+		E20676A82A63D9D6005613BB /* dwellr */ = {
+			isa = PBXGroup;
+			children = (
+				E25841002B814C1800C7149A /* GoogleService-Info.plist */,
+				E27C73052A901EF10066CD32 /* model */,
+				E27C72FF2A89969E0066CD32 /* util */,
+				E20676B92A63DE2D005613BB /* Info.plist */,
+				E21AF6742A83505B00482AEE /* networking */,
+				E21AF6732A83504000482AEE /* viewmodel */,
+				E21AF6722A834F1600482AEE /* view */,
+				E20676AB2A63D9D6005613BB /* ContentView.swift */,
+				E20676A92A63D9D6005613BB /* DwellrApp.swift */,
+				E20676AD2A63D9D7005613BB /* Assets.xcassets */,
+				E20676AF2A63D9D7005613BB /* Preview Content */,
+			);
+			path = dwellr;
+			sourceTree = "<group>";
+		};
+		E20676AF2A63D9D7005613BB /* Preview Content */ = {
+			isa = PBXGroup;
+			children = (
+				E20676B02A63D9D7005613BB /* Preview Assets.xcassets */,
+			);
+			path = "Preview Content";
+			sourceTree = "<group>";
+		};
+		E20AFEBE2AD103E700CFD675 /* feed */ = {
+			isa = PBXGroup;
+			children = (
+				E20AFEBC2AD1039100CFD675 /* FeedView.swift */,
+				E288F9882B66FCF6004737E0 /* PostOverlay.swift */,
+				E2957EEE2B6F0D46007FAD64 /* ExpandingTextView.swift */,
+			);
+			path = feed;
+			sourceTree = "<group>";
+		};
+		E21AF6722A834F1600482AEE /* view */ = {
+			isa = PBXGroup;
+			children = (
+				E20AFEBE2AD103E700CFD675 /* feed */,
+				E27C73042A901D190066CD32 /* posts */,
+				E21AF67D2A88AC1E00482AEE /* SettingsView.swift */,
+				E21AF6772A85D79F00482AEE /* ProfileView.swift */,
+			);
+			path = view;
+			sourceTree = "<group>";
+		};
+		E21AF6732A83504000482AEE /* viewmodel */ = {
+			isa = PBXGroup;
+			children = (
+				E28F094B2AD4BB0700921614 /* FeedViewModel.swift */,
+				E27128BC2A67835C004B7CBD /* SpeechViewModel.swift */,
+				E27128B82A662EE3004B7CBD /* CameraViewModel.swift */,
+			);
+			path = viewmodel;
+			sourceTree = "<group>";
+		};
+		E21AF6742A83505B00482AEE /* networking */ = {
+			isa = PBXGroup;
+			children = (
+				E2D0B9AE2AD106BC00E0F64F /* FetchService.swift */,
+			);
+			path = networking;
+			sourceTree = "<group>";
+		};
+		E27C72FF2A89969E0066CD32 /* util */ = {
+			isa = PBXGroup;
+			children = (
+				E27C73002A8996BA0066CD32 /* VideoUtils.swift */,
+			);
+			path = util;
+			sourceTree = "<group>";
+		};
+		E27C73042A901D190066CD32 /* posts */ = {
+			isa = PBXGroup;
+			children = (
+				E21AF67F2A88B08300482AEE /* CreatePostOnboardingView.swift */,
+				E20676B72A63DBCF005613BB /* CameraView.swift */,
+				E27128BA2A662F4A004B7CBD /* CameraPreview.swift */,
+				E27128C22A68D984004B7CBD /* ReviewRecordingView.swift */,
+				E21AF67B2A85D97300482AEE /* ReviewPostView.swift */,
+			);
+			path = posts;
+			sourceTree = "<group>";
+		};
+		E27C73052A901EF10066CD32 /* model */ = {
+			isa = PBXGroup;
+			children = (
+				E27C73022A901C970066CD32 /* CaptureData.swift */,
+				E27C73062A967CA60066CD32 /* DescriptionData.swift */,
+				E21308F22AD3BB2300B2A20C /* Posts.swift */,
+			);
+			path = model;
+			sourceTree = "<group>";
+		};
+/* End PBXGroup section */
+
+/* Begin PBXNativeTarget section */
+		E20676A52A63D9D6005613BB /* Dwellr */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = E20676B42A63D9D7005613BB /* Build configuration list for PBXNativeTarget "Dwellr" */;
+			buildPhases = (
+				108F7FC4E3529CABF6F267CC /* [CP] Check Pods Manifest.lock */,
+				E20676A22A63D9D6005613BB /* Sources */,
+				E20676A32A63D9D6005613BB /* Frameworks */,
+				E20676A42A63D9D6005613BB /* Resources */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+			);
+			name = Dwellr;
+			packageProductDependencies = (
+				E211EEEB2A7A1A4D00CF9473 /* AWSAPIPlugin */,
+				E211EEED2A7A1A4D00CF9473 /* AWSCloudWatchLoggingPlugin */,
+				E211EEEF2A7A1A4D00CF9473 /* AWSCognitoAuthPlugin */,
+				E211EEF12A7A1A4D00CF9473 /* AWSDataStorePlugin */,
+				E211EEF32A7A1A4D00CF9473 /* AWSLocationGeoPlugin */,
+				E211EEF52A7A1A4D00CF9473 /* AWSPinpointAnalyticsPlugin */,
+				E211EEF72A7A1A4D00CF9473 /* AWSPinpointPushNotificationsPlugin */,
+				E211EEF92A7A1A4D00CF9473 /* AWSPluginsCore */,
+				E211EEFB2A7A1A4D00CF9473 /* AWSPredictionsPlugin */,
+				E211EEFD2A7A1A4D00CF9473 /* AWSS3StoragePlugin */,
+				E211EEFF2A7A1A4D00CF9473 /* Amplify */,
+				E211EF012A7A1A4D00CF9473 /* CoreMLPredictionsPlugin */,
+				E211EF042A7A1AD100CF9473 /* Authenticator */,
+				E25841032B814C9100C7149A /* FirebaseAnalytics */,
+				E25841052B814C9100C7149A /* FirebaseAnalyticsOnDeviceConversion */,
+				E25841072B814C9100C7149A /* FirebaseAnalyticsSwift */,
+				E25841092B814C9100C7149A /* FirebaseAnalyticsWithoutAdIdSupport */,
+				E258410B2B814C9100C7149A /* FirebaseAppCheck */,
+			);
+			productName = "avem-prototype-v2";
+			productReference = E20676A62A63D9D6005613BB /* Dwellr.app */;
+			productType = "com.apple.product-type.application";
+		};
+/* End PBXNativeTarget section */
+
+/* Begin PBXProject section */
+		E206769E2A63D9D6005613BB /* Project object */ = {
+			isa = PBXProject;
+			attributes = {
+				BuildIndependentTargetsInParallel = 1;
+				LastSwiftUpdateCheck = 1430;
+				LastUpgradeCheck = 1430;
+				TargetAttributes = {
+					E20676A52A63D9D6005613BB = {
+						CreatedOnToolsVersion = 14.3.1;
+					};
+				};
+			};
+			buildConfigurationList = E20676A12A63D9D6005613BB /* Build configuration list for PBXProject "Dwellr" */;
+			compatibilityVersion = "Xcode 14.0";
+			developmentRegion = en;
+			hasScannedForEncodings = 0;
+			knownRegions = (
+				en,
+				Base,
+			);
+			mainGroup = E206769D2A63D9D6005613BB;
+			packageReferences = (
+				E211EEEA2A7A1A4D00CF9473 /* XCRemoteSwiftPackageReference "amplify-swift" */,
+				E211EF032A7A1AD100CF9473 /* XCRemoteSwiftPackageReference "amplify-ui-swift-authenticator" */,
+				E25841022B814C9100C7149A /* XCRemoteSwiftPackageReference "firebase-ios-sdk" */,
+			);
+			productRefGroup = E20676A72A63D9D6005613BB /* Products */;
+			projectDirPath = "";
+			projectRoot = "";
+			targets = (
+				E20676A52A63D9D6005613BB /* Dwellr */,
+			);
+		};
+/* End PBXProject section */
+
+/* Begin PBXResourcesBuildPhase section */
+		E20676A42A63D9D6005613BB /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				E20676B12A63D9D7005613BB /* Preview Assets.xcassets in Resources */,
+				E2E8F4C62A7F25280002EB0C /* awsconfiguration.json in Resources */,
+				E20676AE2A63D9D7005613BB /* Assets.xcassets in Resources */,
+				E2E8F4C92A7F29C50002EB0C /* amplifyconfiguration.json in Resources */,
+				E2E8F4C42A7F148B0002EB0C /* awsconfiguration.json in Resources */,
+				E2E8F4CA2A7F29C50002EB0C /* awsconfiguration.json in Resources */,
+				E2E8F4C32A7F148B0002EB0C /* amplifyconfiguration.json in Resources */,
+				E25841012B814C1800C7149A /* GoogleService-Info.plist in Resources */,
+				146C958985D723F33C6DD949 /* awsconfiguration.json in Resources */,
+				759282145607054DC519E3DA /* amplifyconfiguration.json in Resources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXResourcesBuildPhase section */
+
+/* Begin PBXShellScriptBuildPhase section */
+		108F7FC4E3529CABF6F267CC /* [CP] Check Pods Manifest.lock */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputFileListPaths = (
+			);
+			inputPaths = (
+				"${PODS_PODFILE_DIR_PATH}/Podfile.lock",
+				"${PODS_ROOT}/Manifest.lock",
+			);
+			name = "[CP] Check Pods Manifest.lock";
+			outputFileListPaths = (
+			);
+			outputPaths = (
+				"$(DERIVED_FILE_DIR)/Pods-Dwellr-checkManifestLockResult.txt",
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "diff \"${PODS_PODFILE_DIR_PATH}/Podfile.lock\" \"${PODS_ROOT}/Manifest.lock\" > /dev/null\nif [ $? != 0 ] ; then\n    # print error to STDERR\n    echo \"error: The sandbox is not in sync with the Podfile.lock. Run 'pod install' or update your CocoaPods installation.\" >&2\n    exit 1\nfi\n# This output is used by Xcode 'outputs' to avoid re-running this script phase.\necho \"SUCCESS\" > \"${SCRIPT_OUTPUT_FILE_0}\"\n";
+			showEnvVarsInLog = 0;
+		};
+/* End PBXShellScriptBuildPhase section */
+
+/* Begin PBXSourcesBuildPhase section */
+		E20676A22A63D9D6005613BB /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				E27128BB2A662F4A004B7CBD /* CameraPreview.swift in Sources */,
+				E288F9892B66FCF6004737E0 /* PostOverlay.swift in Sources */,
+				E20676B82A63DBCF005613BB /* CameraView.swift in Sources */,
+				E21AF6782A85D79F00482AEE /* ProfileView.swift in Sources */,
+				E27C73012A8996BA0066CD32 /* VideoUtils.swift in Sources */,
+				E21AF6802A88B08300482AEE /* CreatePostOnboardingView.swift in Sources */,
+				E27128C32A68D984004B7CBD /* ReviewRecordingView.swift in Sources */,
+				E27128B92A662EE3004B7CBD /* CameraViewModel.swift in Sources */,
+				E2957EEF2B6F0D46007FAD64 /* ExpandingTextView.swift in Sources */,
+				E21308F32AD3BB2300B2A20C /* Posts.swift in Sources */,
+				E20676AC2A63D9D6005613BB /* ContentView.swift in Sources */,
+				E20AFEBD2AD1039100CFD675 /* FeedView.swift in Sources */,
+				E27C73032A901C970066CD32 /* CaptureData.swift in Sources */,
+				E20676AA2A63D9D6005613BB /* DwellrApp.swift in Sources */,
+				E21AF67C2A85D97300482AEE /* ReviewPostView.swift in Sources */,
+				E21AF67E2A88AC1E00482AEE /* SettingsView.swift in Sources */,
+				E27C73072A967CA60066CD32 /* DescriptionData.swift in Sources */,
+				E28F094C2AD4BB0700921614 /* FeedViewModel.swift in Sources */,
+				E27128BD2A67835C004B7CBD /* SpeechViewModel.swift in Sources */,
+				E2D0B9AF2AD106BC00E0F64F /* FetchService.swift in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXSourcesBuildPhase section */
+
+/* Begin XCBuildConfiguration section */
+		E20676B22A63D9D7005613BB /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				CLANG_ANALYZER_NONNULL = YES;
+				CLANG_ANALYZER_NUMBER_OBJECT_CONVERSION = YES_AGGRESSIVE;
+				CLANG_CXX_LANGUAGE_STANDARD = "gnu++20";
+				CLANG_ENABLE_MODULES = YES;
+				CLANG_ENABLE_OBJC_ARC = YES;
+				CLANG_ENABLE_OBJC_WEAK = YES;
+				CLANG_WARN_BLOCK_CAPTURE_AUTORELEASING = YES;
+				CLANG_WARN_BOOL_CONVERSION = YES;
+				CLANG_WARN_COMMA = YES;
+				CLANG_WARN_CONSTANT_CONVERSION = YES;
+				CLANG_WARN_DEPRECATED_OBJC_IMPLEMENTATIONS = YES;
+				CLANG_WARN_DIRECT_OBJC_ISA_USAGE = YES_ERROR;
+				CLANG_WARN_DOCUMENTATION_COMMENTS = YES;
+				CLANG_WARN_EMPTY_BODY = YES;
+				CLANG_WARN_ENUM_CONVERSION = YES;
+				CLANG_WARN_INFINITE_RECURSION = YES;
+				CLANG_WARN_INT_CONVERSION = YES;
+				CLANG_WARN_NON_LITERAL_NULL_CONVERSION = YES;
+				CLANG_WARN_OBJC_IMPLICIT_RETAIN_SELF = YES;
+				CLANG_WARN_OBJC_LITERAL_CONVERSION = YES;
+				CLANG_WARN_OBJC_ROOT_CLASS = YES_ERROR;
+				CLANG_WARN_QUOTED_INCLUDE_IN_FRAMEWORK_HEADER = YES;
+				CLANG_WARN_RANGE_LOOP_ANALYSIS = YES;
+				CLANG_WARN_STRICT_PROTOTYPES = YES;
+				CLANG_WARN_SUSPICIOUS_MOVE = YES;
+				CLANG_WARN_UNGUARDED_AVAILABILITY = YES_AGGRESSIVE;
+				CLANG_WARN_UNREACHABLE_CODE = YES;
+				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
+				COPY_PHASE_STRIP = NO;
+				DEBUG_INFORMATION_FORMAT = dwarf;
+				ENABLE_STRICT_OBJC_MSGSEND = YES;
+				ENABLE_TESTABILITY = YES;
+				GCC_C_LANGUAGE_STANDARD = gnu11;
+				GCC_DYNAMIC_NO_PIC = NO;
+				GCC_NO_COMMON_BLOCKS = YES;
+				GCC_OPTIMIZATION_LEVEL = 0;
+				GCC_PREPROCESSOR_DEFINITIONS = (
+					"DEBUG=1",
+					"$(inherited)",
+				);
+				GCC_WARN_64_TO_32_BIT_CONVERSION = YES;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES_ERROR;
+				GCC_WARN_UNDECLARED_SELECTOR = YES;
+				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
+				GCC_WARN_UNUSED_FUNCTION = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				IPHONEOS_DEPLOYMENT_TARGET = 17.0;
+				MTL_ENABLE_DEBUG_INFO = INCLUDE_SOURCE;
+				MTL_FAST_MATH = YES;
+				ONLY_ACTIVE_ARCH = YES;
+				SDKROOT = iphoneos;
+				SWIFT_ACTIVE_COMPILATION_CONDITIONS = DEBUG;
+				SWIFT_OPTIMIZATION_LEVEL = "-Onone";
+			};
+			name = Debug;
+		};
+		E20676B32A63D9D7005613BB /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				CLANG_ANALYZER_NONNULL = YES;
+				CLANG_ANALYZER_NUMBER_OBJECT_CONVERSION = YES_AGGRESSIVE;
+				CLANG_CXX_LANGUAGE_STANDARD = "gnu++20";
+				CLANG_ENABLE_MODULES = YES;
+				CLANG_ENABLE_OBJC_ARC = YES;
+				CLANG_ENABLE_OBJC_WEAK = YES;
+				CLANG_WARN_BLOCK_CAPTURE_AUTORELEASING = YES;
+				CLANG_WARN_BOOL_CONVERSION = YES;
+				CLANG_WARN_COMMA = YES;
+				CLANG_WARN_CONSTANT_CONVERSION = YES;
+				CLANG_WARN_DEPRECATED_OBJC_IMPLEMENTATIONS = YES;
+				CLANG_WARN_DIRECT_OBJC_ISA_USAGE = YES_ERROR;
+				CLANG_WARN_DOCUMENTATION_COMMENTS = YES;
+				CLANG_WARN_EMPTY_BODY = YES;
+				CLANG_WARN_ENUM_CONVERSION = YES;
+				CLANG_WARN_INFINITE_RECURSION = YES;
+				CLANG_WARN_INT_CONVERSION = YES;
+				CLANG_WARN_NON_LITERAL_NULL_CONVERSION = YES;
+				CLANG_WARN_OBJC_IMPLICIT_RETAIN_SELF = YES;
+				CLANG_WARN_OBJC_LITERAL_CONVERSION = YES;
+				CLANG_WARN_OBJC_ROOT_CLASS = YES_ERROR;
+				CLANG_WARN_QUOTED_INCLUDE_IN_FRAMEWORK_HEADER = YES;
+				CLANG_WARN_RANGE_LOOP_ANALYSIS = YES;
+				CLANG_WARN_STRICT_PROTOTYPES = YES;
+				CLANG_WARN_SUSPICIOUS_MOVE = YES;
+				CLANG_WARN_UNGUARDED_AVAILABILITY = YES_AGGRESSIVE;
+				CLANG_WARN_UNREACHABLE_CODE = YES;
+				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
+				COPY_PHASE_STRIP = NO;
+				DEBUG_INFORMATION_FORMAT = "dwarf-with-dsym";
+				ENABLE_NS_ASSERTIONS = NO;
+				ENABLE_STRICT_OBJC_MSGSEND = YES;
+				GCC_C_LANGUAGE_STANDARD = gnu11;
+				GCC_NO_COMMON_BLOCKS = YES;
+				GCC_WARN_64_TO_32_BIT_CONVERSION = YES;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES_ERROR;
+				GCC_WARN_UNDECLARED_SELECTOR = YES;
+				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
+				GCC_WARN_UNUSED_FUNCTION = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				IPHONEOS_DEPLOYMENT_TARGET = 17.0;
+				MTL_ENABLE_DEBUG_INFO = NO;
+				MTL_FAST_MATH = YES;
+				SDKROOT = iphoneos;
+				SWIFT_COMPILATION_MODE = wholemodule;
+				SWIFT_OPTIMIZATION_LEVEL = "-O";
+				VALIDATE_PRODUCT = YES;
+			};
+			name = Release;
+		};
+		E20676B52A63D9D7005613BB /* Debug */ = {
+			isa = XCBuildConfiguration;
+			baseConfigurationReference = 5DB2278F43ABFCA2CF5D5A2E /* Pods-Dwellr.debug.xcconfig */;
+			buildSettings = {
+				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				ASSETCATALOG_COMPILER_GLOBAL_ACCENT_COLOR_NAME = AccentColor;
+				ASSETCATALOG_COMPILER_INCLUDE_ALL_APPICON_ASSETS = NO;
+				CODE_SIGN_ENTITLEMENTS = Dwellr/Dwellr.entitlements;
+				CODE_SIGN_STYLE = Automatic;
+				CURRENT_PROJECT_VERSION = 20;
+				DEVELOPMENT_ASSET_PATHS = "\"dwellr/Preview Content\"";
+				DEVELOPMENT_TEAM = HU926AN3FW;
+				ENABLE_PREVIEWS = YES;
+				GENERATE_INFOPLIST_FILE = YES;
+				INFOPLIST_FILE = dwellr/Info.plist;
+				INFOPLIST_KEY_NSCameraUsageDescription = "dwellr will use the camera to capture video of a landlord post";
+				INFOPLIST_KEY_NSMicrophoneUsageDescription = "dwellr will use the camera to live transcribe audio";
+				INFOPLIST_KEY_NSSpeechRecognitionUsageDescription = "dwellr will use speech recognition for instructional icons during recording";
+				INFOPLIST_KEY_UIApplicationSceneManifest_Generation = YES;
+				INFOPLIST_KEY_UIApplicationSupportsIndirectInputEvents = YES;
+				INFOPLIST_KEY_UILaunchScreen_Generation = YES;
+				INFOPLIST_KEY_UIRequiresFullScreen = YES;
+				INFOPLIST_KEY_UISupportedInterfaceOrientations = UIInterfaceOrientationPortrait;
+				IPHONEOS_DEPLOYMENT_TARGET = 17.0;
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/Frameworks",
+				);
+				MARKETING_VERSION = 1.7;
+				PRODUCT_BUNDLE_IDENTIFIER = ai.dwellr;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_EMIT_LOC_STRINGS = YES;
+				SWIFT_VERSION = 5.0;
+				TARGETED_DEVICE_FAMILY = "1,2";
+			};
+			name = Debug;
+		};
+		E20676B62A63D9D7005613BB /* Release */ = {
+			isa = XCBuildConfiguration;
+			baseConfigurationReference = 01F65790450BA70B8F788C46 /* Pods-Dwellr.release.xcconfig */;
+			buildSettings = {
+				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				ASSETCATALOG_COMPILER_GLOBAL_ACCENT_COLOR_NAME = AccentColor;
+				ASSETCATALOG_COMPILER_INCLUDE_ALL_APPICON_ASSETS = NO;
+				CODE_SIGN_ENTITLEMENTS = Dwellr/Dwellr.entitlements;
+				CODE_SIGN_STYLE = Automatic;
+				CURRENT_PROJECT_VERSION = 20;
+				DEVELOPMENT_ASSET_PATHS = "\"dwellr/Preview Content\"";
+				DEVELOPMENT_TEAM = HU926AN3FW;
+				ENABLE_PREVIEWS = YES;
+				GENERATE_INFOPLIST_FILE = YES;
+				INFOPLIST_FILE = dwellr/Info.plist;
+				INFOPLIST_KEY_NSCameraUsageDescription = "dwellr will use the camera to capture video of a landlord post";
+				INFOPLIST_KEY_NSMicrophoneUsageDescription = "dwellr will use the camera to live transcribe audio";
+				INFOPLIST_KEY_NSSpeechRecognitionUsageDescription = "dwellr will use speech recognition for instructional icons during recording";
+				INFOPLIST_KEY_UIApplicationSceneManifest_Generation = YES;
+				INFOPLIST_KEY_UIApplicationSupportsIndirectInputEvents = YES;
+				INFOPLIST_KEY_UILaunchScreen_Generation = YES;
+				INFOPLIST_KEY_UIRequiresFullScreen = YES;
+				INFOPLIST_KEY_UISupportedInterfaceOrientations = UIInterfaceOrientationPortrait;
+				IPHONEOS_DEPLOYMENT_TARGET = 17.0;
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/Frameworks",
+				);
+				MARKETING_VERSION = 1.7;
+				PRODUCT_BUNDLE_IDENTIFIER = ai.dwellr;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_EMIT_LOC_STRINGS = YES;
+				SWIFT_VERSION = 5.0;
+				TARGETED_DEVICE_FAMILY = "1,2";
+			};
+			name = Release;
+		};
+/* End XCBuildConfiguration section */
+
+/* Begin XCConfigurationList section */
+		E20676A12A63D9D6005613BB /* Build configuration list for PBXProject "Dwellr" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				E20676B22A63D9D7005613BB /* Debug */,
+				E20676B32A63D9D7005613BB /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		E20676B42A63D9D7005613BB /* Build configuration list for PBXNativeTarget "Dwellr" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				E20676B52A63D9D7005613BB /* Debug */,
+				E20676B62A63D9D7005613BB /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+/* End XCConfigurationList section */
+
+/* Begin XCRemoteSwiftPackageReference section */
+		E211EEEA2A7A1A4D00CF9473 /* XCRemoteSwiftPackageReference "amplify-swift" */ = {
+			isa = XCRemoteSwiftPackageReference;
+			repositoryURL = "https://github.com/aws-amplify/amplify-swift";
+			requirement = {
+				kind = upToNextMajorVersion;
+				minimumVersion = 2.0.0;
+			};
+		};
+		E211EF032A7A1AD100CF9473 /* XCRemoteSwiftPackageReference "amplify-ui-swift-authenticator" */ = {
+			isa = XCRemoteSwiftPackageReference;
+			repositoryURL = "https://github.com/aws-amplify/amplify-ui-swift-authenticator";
+			requirement = {
+				kind = upToNextMajorVersion;
+				minimumVersion = 1.0.0;
+			};
+		};
+		E25841022B814C9100C7149A /* XCRemoteSwiftPackageReference "firebase-ios-sdk" */ = {
+			isa = XCRemoteSwiftPackageReference;
+			repositoryURL = "https://github.com/firebase/firebase-ios-sdk";
+			requirement = {
+				kind = upToNextMajorVersion;
+				minimumVersion = 10.21.0;
+			};
+		};
+/* End XCRemoteSwiftPackageReference section */
+
+/* Begin XCSwiftPackageProductDependency section */
+		E211EEEB2A7A1A4D00CF9473 /* AWSAPIPlugin */ = {
+			isa = XCSwiftPackageProductDependency;
+			package = E211EEEA2A7A1A4D00CF9473 /* XCRemoteSwiftPackageReference "amplify-swift" */;
+			productName = AWSAPIPlugin;
+		};
+		E211EEED2A7A1A4D00CF9473 /* AWSCloudWatchLoggingPlugin */ = {
+			isa = XCSwiftPackageProductDependency;
+			package = E211EEEA2A7A1A4D00CF9473 /* XCRemoteSwiftPackageReference "amplify-swift" */;
+			productName = AWSCloudWatchLoggingPlugin;
+		};
+		E211EEEF2A7A1A4D00CF9473 /* AWSCognitoAuthPlugin */ = {
+			isa = XCSwiftPackageProductDependency;
+			package = E211EEEA2A7A1A4D00CF9473 /* XCRemoteSwiftPackageReference "amplify-swift" */;
+			productName = AWSCognitoAuthPlugin;
+		};
+		E211EEF12A7A1A4D00CF9473 /* AWSDataStorePlugin */ = {
+			isa = XCSwiftPackageProductDependency;
+			package = E211EEEA2A7A1A4D00CF9473 /* XCRemoteSwiftPackageReference "amplify-swift" */;
+			productName = AWSDataStorePlugin;
+		};
+		E211EEF32A7A1A4D00CF9473 /* AWSLocationGeoPlugin */ = {
+			isa = XCSwiftPackageProductDependency;
+			package = E211EEEA2A7A1A4D00CF9473 /* XCRemoteSwiftPackageReference "amplify-swift" */;
+			productName = AWSLocationGeoPlugin;
+		};
+		E211EEF52A7A1A4D00CF9473 /* AWSPinpointAnalyticsPlugin */ = {
+			isa = XCSwiftPackageProductDependency;
+			package = E211EEEA2A7A1A4D00CF9473 /* XCRemoteSwiftPackageReference "amplify-swift" */;
+			productName = AWSPinpointAnalyticsPlugin;
+		};
+		E211EEF72A7A1A4D00CF9473 /* AWSPinpointPushNotificationsPlugin */ = {
+			isa = XCSwiftPackageProductDependency;
+			package = E211EEEA2A7A1A4D00CF9473 /* XCRemoteSwiftPackageReference "amplify-swift" */;
+			productName = AWSPinpointPushNotificationsPlugin;
+		};
+		E211EEF92A7A1A4D00CF9473 /* AWSPluginsCore */ = {
+			isa = XCSwiftPackageProductDependency;
+			package = E211EEEA2A7A1A4D00CF9473 /* XCRemoteSwiftPackageReference "amplify-swift" */;
+			productName = AWSPluginsCore;
+		};
+		E211EEFB2A7A1A4D00CF9473 /* AWSPredictionsPlugin */ = {
+			isa = XCSwiftPackageProductDependency;
+			package = E211EEEA2A7A1A4D00CF9473 /* XCRemoteSwiftPackageReference "amplify-swift" */;
+			productName = AWSPredictionsPlugin;
+		};
+		E211EEFD2A7A1A4D00CF9473 /* AWSS3StoragePlugin */ = {
+			isa = XCSwiftPackageProductDependency;
+			package = E211EEEA2A7A1A4D00CF9473 /* XCRemoteSwiftPackageReference "amplify-swift" */;
+			productName = AWSS3StoragePlugin;
+		};
+		E211EEFF2A7A1A4D00CF9473 /* Amplify */ = {
+			isa = XCSwiftPackageProductDependency;
+			package = E211EEEA2A7A1A4D00CF9473 /* XCRemoteSwiftPackageReference "amplify-swift" */;
+			productName = Amplify;
+		};
+		E211EF012A7A1A4D00CF9473 /* CoreMLPredictionsPlugin */ = {
+			isa = XCSwiftPackageProductDependency;
+			package = E211EEEA2A7A1A4D00CF9473 /* XCRemoteSwiftPackageReference "amplify-swift" */;
+			productName = CoreMLPredictionsPlugin;
+		};
+		E211EF042A7A1AD100CF9473 /* Authenticator */ = {
+			isa = XCSwiftPackageProductDependency;
+			package = E211EF032A7A1AD100CF9473 /* XCRemoteSwiftPackageReference "amplify-ui-swift-authenticator" */;
+			productName = Authenticator;
+		};
+		E25841032B814C9100C7149A /* FirebaseAnalytics */ = {
+			isa = XCSwiftPackageProductDependency;
+			package = E25841022B814C9100C7149A /* XCRemoteSwiftPackageReference "firebase-ios-sdk" */;
+			productName = FirebaseAnalytics;
+		};
+		E25841052B814C9100C7149A /* FirebaseAnalyticsOnDeviceConversion */ = {
+			isa = XCSwiftPackageProductDependency;
+			package = E25841022B814C9100C7149A /* XCRemoteSwiftPackageReference "firebase-ios-sdk" */;
+			productName = FirebaseAnalyticsOnDeviceConversion;
+		};
+		E25841072B814C9100C7149A /* FirebaseAnalyticsSwift */ = {
+			isa = XCSwiftPackageProductDependency;
+			package = E25841022B814C9100C7149A /* XCRemoteSwiftPackageReference "firebase-ios-sdk" */;
+			productName = FirebaseAnalyticsSwift;
+		};
+		E25841092B814C9100C7149A /* FirebaseAnalyticsWithoutAdIdSupport */ = {
+			isa = XCSwiftPackageProductDependency;
+			package = E25841022B814C9100C7149A /* XCRemoteSwiftPackageReference "firebase-ios-sdk" */;
+			productName = FirebaseAnalyticsWithoutAdIdSupport;
+		};
+		E258410B2B814C9100C7149A /* FirebaseAppCheck */ = {
+			isa = XCSwiftPackageProductDependency;
+			package = E25841022B814C9100C7149A /* XCRemoteSwiftPackageReference "firebase-ios-sdk" */;
+			productName = FirebaseAppCheck;
+		};
+/* End XCSwiftPackageProductDependency section */
+	};
+	rootObject = E206769E2A63D9D6005613BB /* Project object */;
+}

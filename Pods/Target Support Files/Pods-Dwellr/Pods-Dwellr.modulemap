@@ -1,0 +1,6 @@
+framework module Pods_Dwellr {
+  umbrella header "Pods-Dwellr-umbrella.h"
+
+  export *
+  module * { export * }
+}
